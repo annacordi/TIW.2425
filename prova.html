@@ -1,6 +1,104 @@
+<!DOCTYPE html>
+<html lang="it">
 <head>
-    <title>Hello World</title>
+  <meta charset="UTF-8">
+  <title>Online Banking Login</title>
+  <style>
+    body {
+      background-color: #ffffff;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      margin: 0;
+      font-family: Arial, sans-serif;
+    }
+
+    .container {
+      background: white;
+      border: 2px solid #4ca2af;
+      border-radius: 15px;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+      padding: 40px;
+      width: 400px;
+      text-align: center;
+    }
+
+    h1 {
+      font-size: 24px;
+      margin-bottom: 20px;
+      color: #333;
+    }
+
+    p {
+      margin-bottom: 30px;
+      color: #555;
+    }
+
+    .input-group {
+      margin-bottom: 20px;
+      text-align: left;
+    }
+
+    .input-group label {
+      display: block;
+      margin-bottom: 5px;
+      color: #333;
+      font-weight: bold;
+    }
+
+    .input-group input {
+      width: 100%;
+      padding: 12px;
+      border: 1px solid #ccc;
+      border-radius: 8px;
+      font-size: 14px;
+    }
+
+    .login-btn {
+      background-color: #4ca2af;
+      color: white;
+      padding: 12px;
+      border: none;
+      width: 100%;
+      border-radius: 8px;
+      font-size: 16px;
+      cursor: pointer;
+      margin-top: 10px;
+    }
+
+    .login-btn:hover {
+      background-color: #248673;
+    }
+
+    .register-link {
+      display: block;
+      margin-top: 20px;
+      color: #007BFF;
+      text-decoration: none;
+      font-size: 14px;
+    }
+
+    .register-link:hover {
+      text-decoration: underline;
+    }
+  </style>
 </head>
 <body>
-    <h1>Hello World!</h1>
+  <div class="container">
+    <h1>Servizi Online</h1>
+    <p>Inserisci le tue credenziali</p>
+    <form>
+      <div class="input-group">
+        <label for="username">Username</label>
+        <input type="username" id="username" placeholder="Inserisci la tua username" required>
+      </div>
+      <div class="input-group">
+        <label for="password">Password</label>
+        <input type="password" id="password" placeholder="Inserisci la tua password" required>
+      </div>
+      <button type="submit" class="login-btn">Login</button>
+    </form>
+  </div>
 </body>
+</html>
